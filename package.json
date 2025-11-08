@@ -1,0 +1,21 @@
+{
+  "name": "vuln-scanner",
+  "version": "1.0.0",
+  "description": "A web vulnerability scanner and fuzzer tool for security testing",
+  "main": "scanner.js",
+  "type": "module",
+  "scripts": {
+    "test": "node index.js https://example.com"
+  },
+  "keywords":  ["security", "vulnerability", "scanner", "cybersecurity", "fuzzing"],
+  "author": "Akshay Yadav",
+  "license": "MIT",
+   "bin": {
+    "web-vuln-scanner": "./index.js"
+  },
+  "dependencies": {
+    "axios": "^1.12.2",
+    "fs": "^0.0.1-security",
+    "url": "^0.11.4"
+  }
+}

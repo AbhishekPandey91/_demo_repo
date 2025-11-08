@@ -1,0 +1,49 @@
+
+
+{
+  "scanDate": "2025-10-20T11:28:43.176Z",
+  "targetUrl": "https://www.flipkart.com/",
+  "totalVulnerabilities": 5,
+  "severityBreakdown": {
+    "High": 0,
+    "Medium": 4,
+    "Low": 1
+  },
+  "vulnerabilities": [
+    {
+      "type": "Missing Security Header",
+      "header": "x-frame-options",
+      "description": "Clickjacking protection",
+      "severity": "Medium",
+      "recommendation": "Add x-frame-options header to responses"
+    },
+    {
+      "type": "Missing Security Header",
+      "header": "x-content-type-options",
+      "description": "MIME sniffing protection",
+      "severity": "Medium",
+      "recommendation": "Add x-content-type-options header to responses"
+    },
+    {
+      "type": "Missing Security Header",
+      "header": "strict-transport-security",
+      "description": "HTTPS enforcement",
+      "severity": "Medium",
+      "recommendation": "Add strict-transport-security header to responses"
+    },
+    {
+      "type": "Missing Security Header",
+      "header": "x-xss-protection",
+      "description": "XSS filter bypass protection",
+      "severity": "Medium",
+      "recommendation": "Add x-xss-protection header to responses"
+    },
+    {
+      "type": "Information Disclosure",
+      "header": "server",
+      "value": "nginx",
+      "severity": "Low",
+      "recommendation": "Remove or obfuscate server header"
+    }
+  ]
+}
